@@ -8,15 +8,20 @@ html {
   }
   
   p {
-    font-size: 12px;
-    line-height: 1;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
   }
   
   a {
-    text-decoration: none;
+    text-decoration: underline;
   }
   
-  input[type='text'] {
+  a:visited {
+    color: purple;
+  }
+  
+  input[type="text"] {
     display: block;
     width: 100%;
     border-color: #808080;
@@ -25,6 +30,10 @@ html {
     padding: 10px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus {
+    border-color: blue;
   }
   
   nav {
@@ -61,7 +70,9 @@ html {
   }
   
   .instructions {
-    text-align: justify;
+    text-align: left;
+    min-width: 45ch;
+    max-width: 85ch;
   }
   
   .form-container {
@@ -74,14 +85,18 @@ html {
   }
   
   .survey-form {
-    background: #D3D3D3;
-    color: #C4C4C4;
+    background: #C3C3C3;
+    color: #000000;
     display: flex;
     flex: 2;
     flex-direction: column-reverse;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 30px 20px;
+  }
+  
+  .survey-form input {
+    border-color: #000000;
   }
   
   .survey-btn-container {
@@ -96,6 +111,10 @@ html {
   .btn {
     height: 50px;
     width: 47%;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
   }
   
   .protected-link-container {
